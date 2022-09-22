@@ -15,14 +15,14 @@ stages:
   - job: Second_Job2
     steps:
     - bash: echo build first job
-# - stage: DevDeploy
-#   jobs :
-#   - job: DevDeploy Job
-#     steps :
-#     - bash: echo build first DevDeploy job
-#   - job: Second Job
-#   steps :
-#     - bash: echo build second DevDeploy job
+- stage: DevDeploy
+  jobs :
+  - job: DevDeploy_Job1
+    steps:
+    - bash: echo build first DevDeploy job
+  - job: Second_Job2
+    steps :
+    - bash: echo build second DevDeploy job
 
 # - stage: QADeploy
 #   jobs :
