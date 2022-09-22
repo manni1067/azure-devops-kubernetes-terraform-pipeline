@@ -9,10 +9,10 @@ pool:
 stages:
 - stage: Build
   jobs :
-  - job: First Job
+  - job: First_Job1
     steps:
     - bash: echo build first job
-  - job: Second Job
+  - job: Second_Job2
     steps:
     - bash: echo build first job
 # - stage: DevDeploy
